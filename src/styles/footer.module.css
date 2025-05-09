@@ -1,0 +1,147 @@
+.footer {
+    background: var(--primary-bg);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.authWidth {
+    width: var(--auth-container-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.logoInfo {
+    color: var(--primary-text);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.socialContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.socialIcons {
+    width: 28px;
+    height: auto;
+}
+
+.socialIcons:hover {
+    opacity: 0.8;
+}
+
+.footerRight {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.sender {
+    width: 50px;
+    height: auto;
+}
+
+.titleBold {
+    font-weight: 600;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linksContainer a {
+    font-size: 13px;
+    color: var(--primary-text);
+}
+
+.linksContainer a:hover {
+    opacity: 0.8;
+}
+
+.emailSender {
+    background: var(--highlight-bg-01);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.emailSender input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 13px;
+    color: var(--primary-text);
+    display: flex;
+    flex: 1;
+}
+
+.emailSender input::placeholder {
+    color: var(--primary-text);
+    opacity: 0.8;
+}
+
+.emailSender button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.emailSender button:hover {
+    opacity: 0.8;
+}
+
+.emailSender button img {
+    width: 20px;
+    height: auto;
+}
+
+/* media */
+
+@media(max-width:575px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footerRight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {}
+
+@media(min-width:768px) and (max-width:991px) {}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) and (max-width:1399px) {}
+
+@media(min-width:1400px) and (max-width:1699px) {}
+
+@media(min-width:1700px) {}

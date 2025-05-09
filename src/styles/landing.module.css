@@ -1,0 +1,1061 @@
+.banner {
+    background: var(--primary-text)
+}
+
+.bannerCard {
+    background: var(--bg-color-02);
+    height: 100%;
+}
+
+.bannerTitle {
+    font-family: 'ClashDisplay-Semibold';
+    color: var(--text-color-02);
+}
+
+.bannerTitle span {
+    font-family: 'ClashDisplay-Semibold';
+    color: var(--text-color-03);
+}
+
+.bannerDesc {
+    color: var(--text-color-04);
+    font-weight: 500;
+}
+
+
+
+.featuresInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.featuresTitle {
+    color: var(--primary-text);
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.featuresDesc {
+    font-weight: 500;
+    color: var(--primary-text);
+    text-align: center;
+    margin-bottom: 0px;
+    letter-spacing: 0.4;
+}
+
+.tabContainer {
+    width: 100%;
+
+    margin: auto;
+}
+
+.tabButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color-03);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabButtons button {
+
+    border: none;
+    cursor: pointer;
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(var(--bg-color-04), var(--bg-color-04)), radial-gradient(circle at top left, #77009F, #E921A7);
+    background-origin: border-box;
+    border: 1px solid #0000;
+    color: var(--primary-text);
+}
+
+.tabButtons button.active {
+    background-clip: unset;
+    background-image: unset;
+    background-origin: unset;
+    border: 1px solid #0000;
+    background: var(--highlight-bg-01);
+}
+
+.tabContentWrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    min-height: 405px;
+}
+
+.tabContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.featureSection {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    color: var(--primary-text);
+}
+
+
+
+.features .coinOne {
+    z-index: 2;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    bottom: 85px;
+    left: 100px;
+}
+
+.features .coinTwo {
+    z-index: 2;
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 85px;
+    right: 100px;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slideUp {
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+.slideLeft {
+    animation: slideLeft 0.5s ease-out forwards;
+}
+
+.slideRight {
+    animation: slideRight 0.5s ease-out forwards;
+}
+
+/* .featureJson {
+    max-width: 350px;
+} */
+
+.featureContentTitle {
+    font-weight: 600;
+}
+
+.featureContentDesc p {
+    font-weight: 500;
+}
+
+.optimize {
+    background: url('../../public/assests/image/optimizeBg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+}
+
+
+.optimizeCard {
+    background: var(--bg-color-06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.optimizeTitle {
+    text-align: center;
+    color: var(--text-color-05);
+    font-weight: 600;
+}
+
+.optimizeDesc {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.4;
+    color: var(--text-color-04);
+}
+
+.optimizeLists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.optimizeSingleList {
+    background: var(--bg-color-05);
+    color: var(--text-color-02);
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.4;
+}
+
+.optimizeSingleList.active {
+    background: var(--highlight-bg-01);
+    color: var(--primary-text);
+
+}
+
+/* media */
+
+@media(max-width:575px) {
+    .banner {
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .bannerCard {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .bannerTitle {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .bannerDesc {
+        font-size: 14px;
+    }
+
+
+    .tabContainer {
+        max-width: 100%;
+    }
+
+
+    .features {
+        background: url('../../public/assests/image/featureCover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        /* height: 100vh; */
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+
+    .featuresTitle {
+        font-size: 20px;
+    }
+
+    .featuresDesc {
+        font-size: 14px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featureSection {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .tabButtons {
+        gap: 10px;
+        margin-bottom: 20px;
+        padding: 6px 15px;
+        border-radius: 30px;
+        max-width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .tabButtons button {
+        padding: 8px 13px;
+        border-radius: 30px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .tabContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featureContentTitle {
+        font-size: 16px;
+        letter-spacing: 0.4;
+        text-align: center;
+    }
+
+    .featureContentDesc p {
+        letter-spacing: 0.4;
+        line-height: 27px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .features .coinOne {
+        display: none;
+    }
+
+    .features .coinTwo {
+        display: none;
+    }
+
+    .featureButtonContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .optimize {
+        padding-top: 95px;
+        padding-bottom: 60px;
+    }
+
+    .optimizeCard {
+        padding: 20px;
+        border-radius: 20px;
+        gap: 10px;
+    }
+
+    .optimizeTitle {
+        font-size: 20px;
+    }
+
+    .optimizeDesc {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .optimizeLists {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .optimizeSingleList {
+        padding: 10px 15px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+}
+
+
+
+@media(min-width:576px) and (max-width:767px) {
+    .banner {
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bannerCard {
+        padding: 50px;
+        border-radius: 40px;
+    }
+
+    .bannerTitle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .bannerDesc {
+        font-size: 14px;
+    }
+
+
+    .tabContainer {
+        max-width: 100%;
+    }
+
+
+    .features {
+        background: url('../../public/assests/image/featureCover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        /* height: 100vh; */
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+
+    .featuresTitle {
+        font-size: 24px;
+    }
+
+    .featuresDesc {
+        font-size: 14px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabButtons {
+        gap: 10px;
+        margin-bottom: 20px;
+        padding: 6px 15px;
+        border-radius: 30px;
+    }
+
+    .tabButtons button {
+        padding: 8px 13px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+    .featureContentTitle {
+        font-size: 16px;
+        letter-spacing: 0.4;
+    }
+
+    .featureContentDesc p {
+        letter-spacing: 0.4;
+        line-height: 27px;
+        font-size: 14px;
+    }
+
+    .features .coinOne {
+        width: 60px;
+        bottom: 40px;
+        left: 30px;
+    }
+
+    .features .coinTwo {
+        width: 40px;
+        top: 60px;
+        right: 50px;
+    }
+
+
+    .optimize {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .optimizeCard {
+        padding: 40px;
+        border-radius: 30px;
+        gap: 15px;
+    }
+
+    .optimizeTitle {
+        font-size: 25px;
+    }
+
+    .optimizeDesc {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .optimizeLists {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .optimizeSingleList {
+        padding: 13px 20px;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .banner {
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bannerCard {
+        padding: 50px;
+        border-radius: 40px;
+    }
+
+    .bannerTitle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .bannerDesc {
+        font-size: 14px;
+    }
+
+
+    .tabContainer {
+        max-width: 800px;
+    }
+
+
+    .features {
+        background: url('../../public/assests/image/featureCover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        /* height: 100vh; */
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+
+    .featuresTitle {
+        font-size: 28px;
+    }
+
+    .featuresDesc {
+        font-size: 14px;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabButtons {
+        gap: 15px;
+        margin-bottom: 20px;
+        padding: 8px 25px;
+        border-radius: 30px;
+    }
+
+    .tabButtons button {
+        padding: 8px 23px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+    .featureContentTitle {
+        font-size: 20px;
+        letter-spacing: 0.4;
+    }
+
+    .featureContentDesc p {
+        letter-spacing: 0.4;
+        line-height: 27px;
+        font-size: 14px;
+    }
+
+    .features .coinOne {
+        width: 60px;
+        bottom: 40px;
+        left: 30px;
+    }
+
+    .features .coinTwo {
+        width: 40px;
+        top: 60px;
+        right: 50px;
+    }
+
+
+    .optimize {
+        padding-top: 150px;
+        padding-bottom: 60px;
+    }
+
+    .optimizeCard {
+        gap: 20px;
+        padding: 60px;
+        border-radius: 45px;
+    }
+
+    .optimizeTitle {
+        font-size: 28px;
+    }
+
+    .optimizeDesc {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .optimizeLists {
+        width: 100%;
+        gap: 25px;
+    }
+
+    .optimizeSingleList {
+        padding: 15px 20px;
+        font-size: 16px;
+        border-radius: 15px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .banner {
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bannerCard {
+        padding: 50px 60px;
+        border-radius: 40px;
+    }
+
+    .bannerTitle {
+        font-size: 38px;
+        line-height: 55px;
+    }
+
+    .bannerDesc {
+        font-size: 15px;
+    }
+
+    .tabContainer {
+        max-width: 800px;
+    }
+
+
+    .features {
+        background: url('../../public/assests/image/featureCover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        /* height: 100vh; */
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+    }
+
+
+    .featuresTitle {
+        font-size: 32px;
+    }
+
+    .featuresDesc {
+        font-size: 15px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabButtons {
+        gap: 15px;
+        margin-bottom: 20px;
+        padding: 8px 25px;
+        border-radius: 30px;
+    }
+
+    .tabButtons button {
+        padding: 8px 23px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+
+    .featureContentTitle {
+        font-size: 23px;
+        letter-spacing: 0.4;
+    }
+
+    .featureContentDesc p {
+        letter-spacing: 0.4;
+        line-height: 27px;
+        font-size: 15px;
+    }
+
+    .features .coinOne {
+        width: 60px;
+        bottom: 50px;
+        left: 50px;
+    }
+
+    .features .coinTwo {
+        width: 40px;
+        top: 60px;
+        right: 50px;
+    }
+
+
+    .optimize {
+        padding-top: 180px;
+        padding-bottom: 60px;
+    }
+
+    .optimizeCard {
+        gap: 20px;
+        padding: 70px;
+        border-radius: 45px;
+    }
+
+    .optimizeTitle {
+        font-size: 32px;
+    }
+
+    .optimizeDesc {
+        font-size: 16px;
+        max-width: 900px;
+    }
+
+    .optimizeLists {
+        width: 100%;
+        max-width: 600px;
+        gap: 25px;
+    }
+
+    .optimizeSingleList {
+        padding: 15px 20px;
+        font-size: 17px;
+        border-radius: 15px;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1399px) {
+    .banner {
+        height: calc(100vh - var(--header-height-xl));
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bannerCard {
+        padding: 50px 70px;
+        border-radius: 50px;
+    }
+
+    .bannerTitle {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .bannerDesc {
+        font-size: 15px;
+    }
+
+    .tabContainer {
+        max-width: 800px;
+    }
+
+
+    .features {
+        background: url('../../public/assests/image/featureCover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        /* height: 100vh; */
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+    }
+
+
+    .featuresTitle {
+        font-size: 32px;
+    }
+
+    .featuresDesc {
+        font-size: 15px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabButtons {
+        gap: 15px;
+        margin-bottom: 20px;
+        padding: 8px 25px;
+        border-radius: 30px;
+    }
+
+    .tabButtons button {
+        padding: 8px 23px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+
+    .featureContentTitle {
+        font-size: 23px;
+        letter-spacing: 0.4;
+    }
+
+    .featureContentDesc p {
+        letter-spacing: 0.4;
+        line-height: 27px;
+        font-size: 15px;
+    }
+
+    .features .coinOne {
+        width: 80px;
+        bottom: 85px;
+        left: 100px;
+    }
+
+    .features .coinTwo {
+        width: 50px;
+        top: 85px;
+        right: 100px;
+    }
+
+    .optimize {
+        padding-top: 180px;
+        padding-bottom: 60px;
+    }
+
+    .optimizeCard {
+        gap: 20px;
+        padding: 70px;
+        border-radius: 45px;
+    }
+
+    .optimizeTitle {
+        font-size: 32px;
+    }
+
+    .optimizeDesc {
+        font-size: 16px;
+        max-width: 900px;
+    }
+
+    .optimizeLists {
+        width: 100%;
+        max-width: 600px;
+        gap: 25px;
+    }
+
+    .optimizeSingleList {
+        padding: 15px 20px;
+        font-size: 17px;
+        border-radius: 15px;
+    }
+}
+
+@media(min-width:1400px) and (max-width:1699px) {
+    .banner {
+        height: calc(100vh - var(--header-height-xxl));
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bannerCard {
+        padding: 50px 70px;
+        border-radius: 50px;
+    }
+
+    .bannerTitle {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .bannerDesc {
+        font-size: 17px;
+    }
+
+    .tabContainer {
+        max-width: 800px;
+    }
+
+
+    .features {
+        background: url('../../public/assests/image/featureCover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        /* height: 100vh; */
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+    }
+
+
+    .featuresTitle {
+        font-size: 40px;
+    }
+
+    .featuresDesc {
+        font-size: 16px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabButtons {
+        gap: 15px;
+        margin-bottom: 20px;
+        padding: 10px 30px;
+        border-radius: 30px;
+    }
+
+    .tabButtons button {
+        padding: 10px 25px;
+        border-radius: 30px;
+    }
+
+    .featureContentTitle {
+        font-size: 25px;
+        letter-spacing: 0.4;
+    }
+
+    .featureContentDesc p {
+        letter-spacing: 0.4;
+        line-height: 29px;
+    }
+
+    .optimize {
+        padding-top: 220px;
+        padding-bottom: 80px;
+    }
+
+    .optimizeCard {
+        gap: 20px;
+        padding: 80px;
+        border-radius: 45px;
+    }
+
+    .optimizeTitle {
+        font-size: 35px;
+    }
+
+    .optimizeDesc {
+        font-size: 16px;
+        max-width: 900px;
+    }
+
+    .optimizeLists {
+        width: 100%;
+        max-width: 600px;
+        gap: 25px;
+    }
+
+    .optimizeSingleList {
+        padding: 15px 20px;
+        font-size: 17px;
+        border-radius: 15px;
+    }
+
+}
+
+@media(min-width:1700px) {
+    .banner {
+        height: calc(100vh - var(--header-height-xxxl));
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .bannerCard {
+        padding: 60px 100px;
+        border-radius: 60px;
+    }
+
+    .bannerTitle {
+        font-size: 65px;
+        line-height: 100px;
+    }
+
+    .bannerDesc {
+        font-size: 22px;
+    }
+
+    .tabContainer {
+        max-width: 1000px;
+    }
+
+
+    .features {
+        background: url('../../public/assests/image/featureCover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        /* height: 100vh; */
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+    }
+
+
+    .featuresTitle {
+        font-size: 45px;
+    }
+
+    .featuresDesc {
+        font-size: 18px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabButtons {
+        gap: 20px;
+        margin-bottom: 30px;
+        padding: 15px 35px;
+        border-radius: 40px;
+    }
+
+    .tabButtons button {
+        padding: 13px 28px;
+        border-radius: 35px;
+        font-size: 17px;
+    }
+
+    .featureContentTitle {
+        font-size: 28px;
+        letter-spacing: 0.4;
+    }
+
+    .featureContentDesc p {
+        letter-spacing: 0.4;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+
+    .optimize {
+        padding-top: 220px;
+        padding-bottom: 80px;
+    }
+
+    .optimizeCard {
+        gap: 25px;
+        padding: 90px;
+        border-radius: 45px;
+    }
+
+    .optimizeTitle {
+        font-size: 40px;
+    }
+
+    .optimizeDesc {
+        font-size: 17px;
+        max-width: 900px;
+    }
+
+    .optimizeLists {
+        width: 100%;
+        max-width: 700px;
+        gap: 25px;
+    }
+
+    .optimizeSingleList {
+        padding: 17px 25px;
+        font-size: 18px;
+        border-radius: 16px;
+    }
+}

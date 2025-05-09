@@ -1,0 +1,217 @@
+.modalPrimary [class='modal-content'] {
+    background: var(--secondary-bg);
+    border-radius: 15px;
+}
+
+.modalCloseButton {
+    border: none;
+    outline: none;
+    width: fit-content;
+    background: var(--highlight-bg-01);
+}
+
+.modalPrimaryHeader {
+    position: relative;
+    border: none;
+}
+
+.modalCloseButton {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalCloseButton svg {
+    font-size: 25px;
+}
+
+.modalPrimaryBody {
+    padding: 30px;
+}
+
+.currencyPairCard {
+    width: 100%;
+    background: var(--bg-color-07);
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+.currencyPairs {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+}
+
+.singlePairInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pairName {
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.currencyImage {
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: contain;
+    min-width: 60px;
+    width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    height: 60px;
+    max-height: 60px;
+}
+
+.transferIcon {
+    width: 20px;
+    height: auto;
+}
+
+.modalPrimaryFooter {
+    border-top: 1px solid var(--bg-color-08);
+    padding: 30px;
+}
+
+.footerActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.modalSecondary [class='modal-dialog'] {
+    max-width: 420px !important;
+}
+
+.modalLabel {
+    color: var(--text-color-01);
+}
+
+.modalSecondary [class='modal-content'] {
+    background: var(--bg-color-09);
+    border-radius: 15px;
+}
+
+.modalSecondaryHeader {
+    border: none;
+}
+
+.modalSecondaryBody {
+    padding: 30px;
+}
+
+.connectOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.walletConnectButton {
+    border: none;
+    outline: none;
+    background: var(--bg-color-10);
+    color: var(--text-color-05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.walletConnectButton .name {
+    color: var(--text-color-05);
+}
+
+.walletConnectButton .right svg {
+    fill: var(--text-color-05);
+}
+
+.walletConnectButton:hover {
+    background: var(--highlight-bg-01);
+    color: var(--primary-text);
+}
+
+.walletConnectButton:hover {
+    background: var(--highlight-bg-01);
+    color: var(--primary-text);
+}
+
+.walletConnectButton:hover .name {
+    color: var(--primary-text);
+}
+
+.walletConnectButton:hover .right svg {
+    fill: var(--primary-text);
+}
+
+.walletConnectButton .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.walletConnectButton .left .walletIcon {
+    width: 40px;
+    height: auto;
+}
+
+.walletConnectButton .left .name {
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* media */
+
+@media(max-width:575px) {
+    .modalPrimaryBody {
+        padding: 20px;
+    }
+
+    .currencyPairCard {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .modalPrimaryFooter {
+        padding: 20px;
+    }
+
+    .currencyImage {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {}
+
+@media(min-width:768px) and (max-width:991px) {}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) and (max-width:1399px) {}
+
+@media(min-width:1400px) and (max-width:1699px) {}
+
+@media(min-width:1700px) {}

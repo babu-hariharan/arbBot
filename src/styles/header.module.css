@@ -1,0 +1,120 @@
+.header {
+    background: var(--bg-color-01);
+    box-shadow: 0px 1px 13px 0px #00000040;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header.authHeader {
+    background: var(--secondary-bg);
+    position: fixed;
+    box-shadow: unset;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+}
+
+.logo {
+    width: 160px;
+    height: 100%;
+}
+
+.authWidth {
+    width: var(--auth-container-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* media */
+
+@media(max-width:575px) {
+    .logo {
+        width: 120px;
+        height: 100%;
+    }
+
+    .header {
+        height: var(--header-height-xs);
+    }
+
+    .logo {
+        width: 100px;
+        height: 100%;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .header {
+        height: var(--header-height-xl);
+    }
+
+    .logo {
+        width: 150px;
+        height: 100%;
+    }
+}
+
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .header {
+        height: var(--header-height-xl);
+    }
+
+    .logo {
+        width: 150px;
+        height: 100%;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .header {
+        height: var(--header-height-xl);
+    }
+
+    .logo {
+        width: 150px;
+        height: 100%;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1399px) {
+    .header {
+        height: var(--header-height-xl);
+    }
+
+    .logo {
+        width: 150px;
+        height: 100%;
+    }
+}
+
+@media(min-width:1400px) and (max-width:1699px) {
+    .header {
+        height: var(--header-height-xxl);
+    }
+
+    .logo {
+        width: 160px;
+        height: 100%;
+    }
+}
+
+@media(min-width:1700px) {
+    .header {
+        height: var(--header-height-xxxl);
+    }
+
+    .logo {
+        width: 200px;
+        height: 100%;
+    }
+}

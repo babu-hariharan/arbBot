@@ -1,0 +1,1514 @@
+.noOfTrade {
+    grid-area: noOfTrade;
+}
+
+.totalTrade {
+    grid-area: totalTrade;
+}
+
+.totalEarned {
+    grid-area: totalEarned;
+}
+
+.userStats {
+    grid-area: userStats;
+}
+
+.flashLoan {
+    grid-area: flashLoan;
+}
+
+.marketOpp {
+    grid-area: marketOpp;
+}
+
+.arbitrageDetails {
+    grid-area: arbitrageDetails;
+}
+
+.borrow {
+    grid-area: borrow;
+}
+
+
+.innerCards {
+    background: var(--secondary-bg);
+    box-shadow: 5.33px 5.33px 44px 0px #0000000D;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+}
+
+.imageWrapperSm {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--highlight-bg-01);
+}
+
+.imageWrapperSm img {
+    width: 100%;
+    height: auto;
+}
+
+.titleSm {
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.countInfo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.countInfoLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.countXl {
+    font-weight: 600;
+    display: inline-flex;
+    margin-bottom: 0px;
+}
+
+.percentValue {
+    font-weight: 600;
+    display: inline-flex;
+    margin-bottom: 0px;
+}
+
+.percentValue.profit {
+    color: var(--green-color-01);
+}
+
+.percentValue.profit svg {
+    fill: var(--green-color-01);
+}
+
+.cardTitle {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.statsCardsWrapper {
+    display: grid;
+}
+
+.cardSm {
+    background: var(--bg-color-07);
+}
+
+.cardSmTitle {
+    margin-bottom: 0px;
+    color: var(--text-color-01);
+    font-weight: 400;
+}
+
+.cardSmValue {
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.cardSmValue.profit {
+    color: var(--green-color-01);
+}
+
+.flashLoanBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.currencyImage {
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.headerSpaceBetween {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardTitleButton {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text-color-01);
+}
+
+.cardTitleButton:hover {
+    opacity: 0.8;
+}
+
+
+.currencyPairs {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.singlePairInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pairName {
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.pairConnection {
+    font-weight: 500;
+}
+
+.currencyPairButton {
+    border: none;
+    outline: none;
+    background: var(--highlight-bg-01);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.cardXsValue {
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+
+
+.cardXsTitle {
+    color: var(--text-color-01);
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.currencyDetailsHighlight {
+    background: var(--highlight-bg-01);
+}
+
+.currencyDetailsHighlight p {
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+
+.tableCard {
+    background: var(--secondary-bg);
+    padding: var(--space-xl);
+    border-radius: var(--radius-xl);
+    height: 100%;
+}
+
+.tableCardHeader.tableHeaderBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tableHeaderTitle {
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+
+.formContainer {
+    width: 100%;
+    max-width: 500px;
+}
+
+.formLabel {
+    font-weight: 400;
+}
+
+.formControlWrapper {
+    margin-top: 10px;
+}
+
+.formError {
+    margin-top: 10px;
+    color: var(--red-color-01);
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.formsFlex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.formAdd {
+    min-width: 45px;
+    width: 45px;
+    max-width: 45px;
+    min-height: 45px;
+    height: 45px;
+    max-height: 45px;
+    border-radius: 50%;
+    background: var(--highlight-bg-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pairsCombiners {}
+
+/* media */
+
+@media(max-width:575px) {
+    .dashGrid {
+        display: grid;
+        /* grid-template: "noOfTrade totalTrade totalEarned"
+            "userStats userStats flashLoan"
+            "marketOpp marketOpp arbitrageDetails"
+            "borrow borrow borrow"; */
+        grid-template: "noOfTrade"
+            "totalTrade"
+            "totalEarned"
+            "userStats"
+            "flashLoan"
+            "marketOpp"
+            "arbitrageDetails"
+            "borrow";
+        gap: 20px;
+    }
+
+    .innerCards {
+        padding: var(--space-md);
+        border-radius: var(--radius-md);
+        height: 100%;
+    }
+
+    .cardHeader {
+        gap: 15px;
+    }
+
+    .imageWrapperSm {
+        min-width: 35px;
+        width: 35px;
+        max-width: 35px;
+        min-height: 35px;
+        height: 35px;
+        max-height: 35px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .titleSm {
+        font-size: 16px;
+    }
+
+    .countInfo {
+        margin-top: var(--offset-top-md);
+        gap: 20px;
+    }
+
+    .countInfoLeft {
+        gap: 10px;
+    }
+
+    .countXl {
+        font-size: 18px;
+        gap: 5px;
+    }
+
+    .percentValue {
+        font-size: 13px;
+        gap: 5px;
+    }
+
+    .graphShow img {
+        width: 120px;
+        height: auto;
+    }
+
+    .cardTitle {
+        font-size: 17px;
+    }
+
+    .statsCardsWrapper {
+        margin-top: var(--offset-top-xl);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .cardSm {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardSmTitle {
+        font-size: 15px;
+    }
+
+    .cardSmValue {
+        margin-top: 13px;
+        font-size: 19px;
+    }
+
+    .flashLoanBody {
+        gap: 15px;
+    }
+
+    .currencyImage {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+
+    .flashLoanBody {
+        min-height: 250px;
+        height: calc(100% - 30px);
+    }
+
+    .cardTitleButton {
+        font-size: 15px;
+    }
+
+
+    .marketOppBody {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: var(--offset-top-xl);
+    }
+
+    .currencyPairs {
+        max-width: 220px;
+        margin-top: 10px;
+    }
+
+    .singlePairInfo {
+        gap: 15px;
+    }
+
+    .pairName {
+        font-size: 14px;
+    }
+
+    .pairConnection {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .currencyPairButton {
+        margin-top: 30px;
+        max-width: 280px;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 13px;
+    }
+
+    .arbitageDetailsCardBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .cardXsValue {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .cardXsTitle {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .currencyDetailsHighlight {
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .currencyDetailsHighlight p {
+        font-size: 14px;
+    }
+
+    .borrowBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .marketOppContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .dashGrid {
+        display: grid;
+        /* grid-template: "noOfTrade totalTrade totalEarned"
+            "userStats userStats flashLoan"
+            "marketOpp marketOpp arbitrageDetails"
+            "borrow borrow borrow"; */
+        grid-template: "noOfTrade userStats userStats "
+            "totalTrade userStats  userStats "
+            "totalEarned userStats  userStats "
+            "flashLoan marketOpp  marketOpp"
+            "arbitrageDetails arbitrageDetails  arbitrageDetails"
+            "borrow borrow borrow";
+        gap: 20px;
+    }
+
+    .innerCards {
+        padding: var(--space-md);
+        border-radius: var(--radius-md);
+        height: 100%;
+    }
+
+    .cardHeader {
+        gap: 15px;
+    }
+
+    .imageWrapperSm {
+        min-width: 30px;
+        width: 30px;
+        max-width: 30px;
+        min-height: 30px;
+        height: 30px;
+        max-height: 30px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .titleSm {
+        font-size: 14px;
+    }
+
+    .countInfo {
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .countInfoLeft {
+        gap: 10px;
+    }
+
+    .countXl {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .percentValue {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .graphShow img {
+        width: 80px;
+        height: auto;
+    }
+
+    .cardTitle {
+        font-size: 17px;
+    }
+
+    .statsCardsWrapper {
+        margin-top: var(--offset-top-xl);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .cardSm {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardSmTitle {
+        font-size: 15px;
+    }
+
+    .cardSmValue {
+        margin-top: 13px;
+        font-size: 19px;
+    }
+
+    .flashLoanBody {
+        gap: 15px;
+    }
+
+    .currencyImage {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+
+    .flashLoanBody {
+        height: calc(100% - 30px);
+    }
+
+    .cardTitleButton {
+        font-size: 15px;
+    }
+
+
+    .marketOppBody {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: var(--offset-top-xl);
+    }
+
+    .currencyPairs {
+        max-width: 220px;
+        margin-top: 10px;
+    }
+
+    .singlePairInfo {
+        gap: 15px;
+    }
+
+    .pairName {
+        font-size: 14px;
+    }
+
+    .pairConnection {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .currencyPairButton {
+        margin-top: 30px;
+        max-width: 320px;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 13px;
+    }
+
+    .arbitageDetailsCardBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .cardXsValue {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .cardXsTitle {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .currencyDetailsHighlight {
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .currencyDetailsHighlight p {
+        font-size: 14px;
+    }
+
+    .borrowBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .marketOppContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .dashGrid {
+        display: grid;
+        grid-template: "noOfTrade totalTrade totalEarned"
+            "userStats userStats flashLoan"
+            "marketOpp marketOpp arbitrageDetails"
+            "borrow borrow borrow";
+        gap: 20px;
+    }
+
+    .innerCards {
+        padding: var(--space-md);
+        border-radius: var(--radius-md);
+    }
+
+    .cardHeader {
+        gap: 15px;
+    }
+
+    .imageWrapperSm {
+        min-width: 30px;
+        width: 30px;
+        max-width: 30px;
+        min-height: 30px;
+        height: 30px;
+        max-height: 30px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .titleSm {
+        font-size: 14px;
+    }
+
+    .countInfo {
+        margin-top: var(--offset-top-xl);
+        gap: 20px;
+    }
+
+    .countInfoLeft {
+        gap: 8px;
+    }
+
+    .countXl {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .percentValue {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .graphShow img {
+        width: 80px;
+        height: auto;
+    }
+
+    .cardTitle {
+        font-size: 17px;
+    }
+
+    .statsCardsWrapper {
+        margin-top: var(--offset-top-xl);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .cardSm {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardSmTitle {
+        font-size: 15px;
+    }
+
+    .cardSmValue {
+        margin-top: 13px;
+        font-size: 19px;
+    }
+
+    .flashLoanBody {
+        gap: 15px;
+    }
+
+    .currencyImage {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+
+    .flashLoanBody {
+        height: calc(100% - 30px);
+    }
+
+    .cardTitleButton {
+        font-size: 15px;
+    }
+
+
+    .marketOppBody {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: var(--offset-top-xl);
+    }
+
+    .currencyPairs {
+        max-width: 220px;
+        margin-top: 10px;
+    }
+
+    .singlePairInfo {
+        gap: 15px;
+    }
+
+    .pairName {
+        font-size: 14px;
+    }
+
+    .pairConnection {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .currencyPairButton {
+        margin-top: 30px;
+        max-width: 300px;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 13px;
+    }
+
+    .arbitageDetailsCardBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .cardXsValue {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .cardXsTitle {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .currencyDetailsHighlight {
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .currencyDetailsHighlight p {
+        font-size: 14px;
+    }
+
+    .borrowBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .marketOppContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .dashGrid {
+        display: grid;
+        grid-template: "noOfTrade totalTrade totalEarned"
+            "userStats userStats flashLoan"
+            "marketOpp marketOpp arbitrageDetails"
+            "borrow borrow borrow";
+        gap: 20px;
+    }
+
+    .innerCards {
+        padding: var(--space-md);
+        border-radius: var(--radius-md);
+    }
+
+    .cardHeader {
+        gap: 15px;
+    }
+
+    .imageWrapperSm {
+        min-width: 30px;
+        width: 30px;
+        max-width: 30px;
+        min-height: 30px;
+        height: 30px;
+        max-height: 30px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .titleSm {
+        font-size: 14px;
+    }
+
+    .countInfo {
+        margin-top: var(--offset-top-xl);
+        gap: 20px;
+    }
+
+    .countInfoLeft {
+        gap: 8px;
+    }
+
+    .countXl {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .percentValue {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .graphShow img {
+        width: 80px;
+        height: auto;
+    }
+
+    .cardTitle {
+        font-size: 17px;
+    }
+
+    .statsCardsWrapper {
+        margin-top: var(--offset-top-xl);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .cardSm {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardSmTitle {
+        font-size: 15px;
+    }
+
+    .cardSmValue {
+        margin-top: 13px;
+        font-size: 19px;
+    }
+
+    .flashLoanBody {
+        gap: 15px;
+    }
+
+    .currencyImage {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+
+    .flashLoanBody {
+        height: calc(100% - 30px);
+    }
+
+    .cardTitleButton {
+        font-size: 15px;
+    }
+
+
+    .marketOppBody {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: var(--offset-top-xl);
+    }
+
+    .currencyPairs {
+        max-width: 220px;
+        margin-top: 10px;
+    }
+
+    .singlePairInfo {
+        gap: 15px;
+    }
+
+    .pairName {
+        font-size: 14px;
+    }
+
+    .pairConnection {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .currencyPairButton {
+        margin-top: 30px;
+        max-width: 280px;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 13px;
+    }
+
+    .arbitageDetailsCardBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .cardXsValue {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .cardXsTitle {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .currencyDetailsHighlight {
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .currencyDetailsHighlight p {
+        font-size: 14px;
+    }
+
+    .borrowBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .marketOppContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+}
+
+@media(min-width:1200px) and (max-width:1399px) {
+    .dashGrid {
+        display: grid;
+        grid-template: "noOfTrade totalTrade totalEarned"
+            "userStats userStats flashLoan"
+            "marketOpp marketOpp arbitrageDetails"
+            "borrow borrow borrow";
+        gap: 20px 25px;
+    }
+
+    .innerCards {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardHeader {
+        gap: 15px;
+    }
+
+    .imageWrapperSm {
+        min-width: 40px;
+        width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        height: 40px;
+        max-height: 40px;
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    .titleSm {
+        font-size: 15px;
+    }
+
+    .countInfo {
+        margin-top: var(--offset-top-xl);
+        gap: 20px;
+    }
+
+    .countInfoLeft {
+        gap: 10px;
+    }
+
+    .countXl {
+        font-size: 20px;
+        gap: 5px;
+    }
+
+    .percentValue {
+        font-size: 14px;
+        gap: 6px;
+    }
+
+    .graphShow img {
+        width: 100px;
+        height: auto;
+    }
+
+    .cardTitle {
+        font-size: 19px;
+    }
+
+    .statsCardsWrapper {
+        margin-top: var(--offset-top-xl);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .cardSm {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardSmTitle {
+        font-size: 15px;
+    }
+
+    .cardSmValue {
+        margin-top: 13px;
+        font-size: 19px;
+    }
+
+    .flashLoanBody {
+        gap: 15px;
+    }
+
+    .currencyImage {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+
+    .flashLoanBody {
+        height: calc(100% - 30px);
+    }
+
+    .cardTitleButton {
+        font-size: 15px;
+    }
+
+
+    .marketOppBody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: var(--offset-top-xl);
+    }
+
+    .currencyPairs {
+        max-width: 220px;
+        margin-top: 10px;
+    }
+
+    .singlePairInfo {
+        gap: 15px;
+    }
+
+    .pairName {
+        font-size: 14px;
+    }
+
+    .pairConnection {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .currencyPairButton {
+        margin-top: 30px;
+        max-width: 285px;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 13px;
+    }
+
+    .arbitageDetailsCardBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .cardXsValue {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .cardXsTitle {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .currencyDetailsHighlight {
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .currencyDetailsHighlight p {
+        font-size: 14px;
+    }
+
+    .borrowBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .noWrapRow {
+        flex-wrap: unset !important;
+    }
+
+    .marketOppContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+}
+
+@media(min-width:1400px) and (max-width:1699px) {
+    .dashGrid {
+        display: grid;
+        grid-template: "noOfTrade totalTrade totalEarned"
+            "userStats userStats flashLoan"
+            "marketOpp marketOpp arbitrageDetails"
+            "borrow borrow borrow";
+        gap: 20px 35px;
+    }
+
+    .innerCards {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardHeader {
+        gap: 20px;
+    }
+
+    .imageWrapperSm {
+        min-width: 45px;
+        width: 45px;
+        max-width: 45px;
+        min-height: 45px;
+        height: 45px;
+        max-height: 45px;
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    .titleSm {
+        font-size: 16px;
+    }
+
+    .countInfo {
+        margin-top: var(--offset-top-xl);
+        gap: 20px;
+    }
+
+    .countInfoLeft {
+        gap: 10px;
+    }
+
+    .countXl {
+        font-size: 22px;
+        gap: 5px;
+    }
+
+    .percentValue {
+        font-size: 15px;
+        gap: 8px;
+    }
+
+    .graphShow img {
+        width: 140px;
+        height: auto;
+    }
+
+    .cardTitle {
+        font-size: 19px;
+    }
+
+    .statsCardsWrapper {
+        margin-top: var(--offset-top-xl);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .cardSm {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardSmTitle {
+        font-size: 15px;
+    }
+
+    .cardSmValue {
+        margin-top: 13px;
+        font-size: 19px;
+    }
+
+    .flashLoanBody {
+        gap: 15px;
+    }
+
+    .currencyImage {
+        min-width: 55px;
+        width: 55px;
+        max-width: 55px;
+        min-height: 55px;
+        height: 55px;
+        max-height: 55px;
+    }
+
+    .flashLoanBody {
+        height: calc(100% - 30px);
+    }
+
+    .cardTitleButton {
+        font-size: 15px;
+    }
+
+
+    .marketOppBody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: var(--offset-top-xl);
+    }
+
+    .currencyPairs {
+        max-width: 220px;
+        margin-top: 10px;
+    }
+
+    .singlePairInfo {
+        gap: 15px;
+    }
+
+    .pairName {
+        font-size: 15px;
+    }
+
+    .pairConnection {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .currencyPairButton {
+        margin-top: 30px;
+        max-width: 320px;
+        padding: 13px 20px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+
+    .arbitageDetailsCardBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .cardXsValue {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .cardXsTitle {
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+
+    .currencyDetailsHighlight {
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .currencyDetailsHighlight p {
+        font-size: 15px;
+    }
+
+    .borrowBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .noWrapRow {
+        flex-wrap: unset !important;
+    }
+
+    .marketOppContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+}
+
+@media(min-width:1700px) {
+    .dashGrid {
+        display: grid;
+        grid-template: "noOfTrade totalTrade totalEarned"
+            "userStats userStats flashLoan"
+            "marketOpp marketOpp arbitrageDetails"
+            "borrow borrow borrow";
+        gap: 20px 35px;
+    }
+
+    .innerCards {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardHeader {
+        gap: 20px;
+    }
+
+    .imageWrapperSm {
+        min-width: 45px;
+        width: 45px;
+        max-width: 45px;
+        min-height: 45px;
+        height: 45px;
+        max-height: 45px;
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    .titleSm {
+        font-size: 17px;
+    }
+
+    .countInfo {
+        margin-top: var(--offset-top-xl);
+        gap: 20px;
+    }
+
+    .countInfoLeft {
+        gap: 10px;
+    }
+
+    .countXl {
+        font-size: 24px;
+        gap: 8px;
+    }
+
+    .percentValue {
+        font-size: 17px;
+        gap: 8px;
+    }
+
+    .graphShow img {
+        width: 180px;
+        height: auto;
+    }
+
+    .cardTitle {
+        font-size: 22px;
+    }
+
+    .statsCardsWrapper {
+        margin-top: var(--offset-top-xl);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .cardSm {
+        padding: var(--space-xl);
+        border-radius: var(--radius-xl);
+    }
+
+    .cardSmTitle {
+        font-size: 17px;
+    }
+
+    .cardSmValue {
+        margin-top: 15px;
+        font-size: 22px;
+    }
+
+    .flashLoanBody {
+        gap: 15px;
+    }
+
+    .currencyImage {
+        min-width: 60px;
+        width: 60px;
+        max-width: 60px;
+        min-height: 60px;
+        height: 60px;
+        max-height: 60px;
+    }
+
+    .flashLoanBody {
+        height: calc(100% - 30px);
+    }
+
+    .cardTitleButton {
+        font-size: 15px;
+    }
+
+
+    .marketOppBody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: var(--offset-top-xl);
+    }
+
+    .currencyPairs {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    .singlePairInfo {
+        gap: 15px;
+    }
+
+    .pairName {
+        font-size: 18px;
+    }
+
+    .pairConnection {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .currencyPairButton {
+        margin-top: 40px;
+        max-width: 360px;
+        padding: 15px 20px;
+        border-radius: 30px;
+        font-size: 17px;
+    }
+
+    .arbitageDetailsCardBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .cardXsValue {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .cardXsTitle {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .currencyDetailsHighlight {
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .currencyDetailsHighlight p {
+        font-size: 17px;
+    }
+
+    .borrowBody {
+        margin-top: var(--offset-top-xl);
+    }
+
+    .noWrapRow {
+        flex-wrap: unset !important;
+    }
+
+    .marketOppContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+}

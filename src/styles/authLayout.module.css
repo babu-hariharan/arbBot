@@ -1,0 +1,191 @@
+.layout {
+    position: relative;
+}
+
+.layoutBody {
+    display: flex;
+    gap: 25px;
+    width: var(--auth-container-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.layoutSidebar {
+    min-width: var(--sidebar-width-xl);
+    width: var(--sidebar-width-xl);
+    max-width: var(--sidebar-width-xl);
+    height: calc(100vh - 125px);
+
+}
+
+.layoutMain {
+    /* width: calc(100% - var(--sidebar-width-xl)); */
+    width: 100%;
+}
+
+.sidebarCanvaButton {
+    width: 35px;
+    height: 35px;
+    background: var(--highlight-bg-01);
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+}
+
+.sidebarCanva svg {
+    font-size: 23px;
+}
+
+.customCanva {
+    width: calc(var(--sidebar-width-xl) + 33px) !important;
+    background: var(--primary-bg) !important;
+}
+
+.customCanvaHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    width: 125px;
+    height: auto;
+}
+
+.customCanvaClose {
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+
+.customCanvaClose:hover {
+    opacity: 0.8;
+}
+
+.customCanvaClose svg {
+    font-size: 20px;
+
+}
+
+.customCanvaBody {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+
+/* media */
+
+@media(max-width:575px) {
+    .sidebarCanvaButton {
+        top: var(--header-height-xs);
+    }
+
+    .layout {
+        padding-top: calc(var(--header-height-xs) + 20px);
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .sidebarCanvaButton {
+        top: var(--header-height-xl);
+    }
+
+    .layout {
+        padding-top: calc(var(--header-height-xl) + 35px);
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .sidebarCanvaButton {
+        top: var(--header-height-xl);
+    }
+
+    .layout {
+        padding-top: calc(var(--header-height-xl) + 35px);
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .sidebarCanvaButton {
+        top: var(--header-height-xl);
+    }
+
+    .layout {
+        padding-top: calc(var(--header-height-xl) + 35px);
+    }
+
+    .layoutSidebar {
+        position: sticky;
+        top: calc(var(--header-height-xxl) + 40px);
+    }
+
+    .layoutMain {
+        width: calc(100% - var(--sidebar-width-xl) - 25px);
+    }
+}
+
+@media(min-width:1200px) and (max-width:1399px) {
+    .sidebarCanvaButton {
+        top: var(--header-height-xl);
+    }
+
+    .layout {
+        padding-top: calc(var(--header-height-xl) + 35px);
+    }
+
+    .layoutSidebar {
+        position: sticky;
+        top: calc(var(--header-height-xxl) + 40px);
+    }
+
+    .layoutMain {
+        width: calc(100% - var(--sidebar-width-xl) - 25px);
+    }
+}
+
+@media(min-width:1400px) and (max-width:1699px) {
+    .sidebarCanvaButton {
+        top: var(--header-height-xxl);
+    }
+
+
+
+    .layout {
+        padding-top: calc(var(--header-height-xxl) + 40px);
+    }
+
+    .layoutSidebar {
+        position: sticky;
+        top: calc(var(--header-height-xxl) + 40px);
+    }
+
+    .layoutMain {
+        width: calc(100% - var(--sidebar-width-xl) - 25px);
+    }
+}
+
+@media(min-width:1700px) {
+    .sidebarCanvaButton {
+        top: var(--header-height-xxxl);
+    }
+
+    .layout {
+        padding-top: calc(var(--header-height-xxxl) + 40px);
+    }
+
+    .layoutSidebar {
+        position: sticky;
+        top: calc(var(--header-height-xxl) + 40px);
+    }
+
+    .layoutMain {
+        width: calc(100% - var(--sidebar-width-xl) - 25px);
+    }
+}
